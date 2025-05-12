@@ -1,0 +1,125 @@
+body{
+    background-color: #FCB32B;
+    margin: 0;
+    color:black;
+    font-family: Arial;
+}
+
+header{
+    background-color: #FFF2CF;  
+  
+}
+
+.account{
+max-width: 3rem;
+
+}
+
+header>img{
+    width: 10rem;
+    max-width: 30%;
+    padding: 1rem;
+}
+
+img{
+    width: 100%;
+
+}
+
+footer{
+    background-color: white;
+    padding: 2rem;
+    text-align:center;
+
+}
+footer img{
+    max-width: 10%;
+}
+section.headline{
+    background-image:url(images/honey-jar.jpg);
+    background-size: cover;
+    background-color: rgb(23,0,65);
+    padding: 1rem 1rem;
+    color: #fff;
+   
+}
+.button{
+    padding: .5rem 1rem;
+    border-radius: 6rem;
+    background-color: #FCB32B;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    cursor:pointer;
+    font-family: arial;
+    border: none;
+}
+.headline p{
+   font-size: 13px;
+   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);;
+}
+nav{
+    text-align: center;
+}
+nav>a{
+    color: #FCB32B;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    display: inline-block;
+    padding-top: 0%;
+    
+}
+.favorites {
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+justify-content: center;
+}
+.favorites h2{
+flex-basis: 100%;
+color: #fff;
+}
+.favorites div{
+    width: 30%;
+}
+section.learn{
+    background-color: #FFF2CF;
+    padding: 1rem;
+}
+
+.account{
+    display: block;
+    float: right;
+    padding-top: 2rem;
+    
+}
+
+@media (min-width: 1000px){
+
+    section.headline{
+        
+        padding: 8rem 1rem;
+    
+       
+    }
+    section.learn{
+
+        padding: 1rem 7rem 2rem;
+    }
+    
+    .headline h1{
+        font-size: 50px;
+        padding-left: 7rem;
+        
+    }
+    .headline p{
+        padding-left: 7rem;
+       
+        font-size: large;
+        line-height: 1.5;
+
+    }
+
+}
