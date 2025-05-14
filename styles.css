@@ -7,7 +7,7 @@ body{
 
 header{
     background-color: #FFF2CF;  
-  
+    
 }
 
 .account{
@@ -26,14 +26,23 @@ img{
 
 }
 
-footer{
-    background-color: white;
-    padding: 2rem;
-    text-align:center;
 
+
+footer{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  padding: 20px 40px;
+  min-height: 100px;
+  
+  background-color: white;
 }
+
 footer img{
-    max-width: 10%;
+    width: 60px;
+  height: 60px;
+  padding: .5rem;
 }
 section.headline{
     background-image:url(images/honey-jar.jpg);
@@ -44,6 +53,18 @@ section.headline{
    
 }
 .button{
+    padding: .5rem 1rem;
+    border-radius: 6rem;
+    background-color: #FCB32B;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    cursor:pointer;
+    font-family: arial;
+    border: none;
+}
+.shop-button{
     padding: .5rem 1rem;
     border-radius: 6rem;
     background-color: #FCB32B;
@@ -84,20 +105,242 @@ color: #fff;
 .favorites div{
     width: 30%;
 }
+.favorites img{
+    border-radius: 10px;
+}
 section.learn{
     background-color: #FFF2CF;
     padding: 1rem;
 }
 
 .account{
-    display: block;
-    float: right;
-    padding-top: 2rem;
-    
+    display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
+
+
+.story{
+   
+    background-color: #FFF2CF;
+    padding: 2rem;
+}
+.our{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    background-color: #fbb732;
+    flex-wrap: wrap; 
+}
+.our img{
+    max-width: 450px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  flex-wrap: wrap; 
+}
+.our>h1{
+    margin-top: 0;
+}
+.our-text{
+    max-width: 600px;
+  flex: 1;
+  color: black;
+}
+.our h1{
+    color: #fff;
+}
+
+.story>h1{
+    text-align: center;
+    color: #FCB32B;
+}
+
+
+  
+  .product {
+    display: flex;
+    align-items: flex-start; 
+    gap: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 900px;
+    margin: 1rem;
+    margin-bottom: 1.5rem; 
+    flex-wrap: wrap;
+  }
+  
+  .product img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  
+  .product-info h3 {
+    margin-top: 0;
+  }
+  
+  .product-info a.button {
+    margin-top: 1rem;
+    align-self: flex-start; 
+  }
+
+.our-products {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+  
+  .our-products h1{
+    color: #fff;
+    text-align: center;
+  }
+  .FAQ{
+    background-color: #FFF2CF;
+  }
+
+
+
+form{
+    
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+label, input[type=text], [type=email], textarea{
+    display: block;
+    margin: 1rem 0;
+    width: 100%;
+}
+input[type=text], [type=email], textarea{
+    width: 95%;
+    padding: .5rem;
+    font-size: 1rem;
+    border: 1px solid transparent;
+}
+textarea{
+    height: 7rem;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: #0b132b;
+}
+input:focus[type=text], input:focus[type=email], textarea:focus{
+    outline: none;
+    border: 1px solid #00e3c8;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+  }
+
+  .main-content {
+    flex: 1;
+    background-color: #fff1cc; 
+    padding: 40px;
+  }
+  .feedback{
+    color: #FCB32B;
+    text-align: center;
+
+  }
+  .bee {
+    margin: 0;
+    padding: 0;
+  }
+  .bee img {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .hero-image {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  
+  
+  .honey-types {
+    background-color: #fbb732;
+    color: white;
+    
+    padding: 2rem 1rem;
+
+    margin: 0 auto;
+  }
+  
+  .honey-types h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  
+  .info-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fff2cf;
+    max-width: 900px;
+    margin: 0 auto;
+   
+  }
+  
+  .info-row img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+  }
+  
+  .info-row div {
+    flex: 1;
+    max-width: 600px;      
+  width: 100%;
+  }
+  
+  .info-row h3 {
+    color: #fcb32b;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info-row p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  
+  .info-row.reverse {
+    flex-direction: row-reverse;
+  }
+
+.FAQ-Back{
+    background-color: #fff1cc;
+  }
+  .orange-background {
+    background-color: #FCB32B;
+  }
 @media (min-width: 1000px){
 
+    .favorites{
+        font-size: 25px;
+    }
     section.headline{
         
         padding: 8rem 1rem;
@@ -121,5 +364,67 @@ section.learn{
         line-height: 1.5;
 
     }
+    
+    .shop-button{
+    margin-left: 7rem;
+    }
 
+    section.learn{
+        
+        padding: 4rem;
+        text-align: center;
+    }
+    nav{
+        display: flex;
+        gap: 20px;   
+    } 
+
+    nav>a{
+        font-size: 25px;
+    }
+   
+    header {
+        display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff1cc;
+  padding: 70px 40px;
+  position: relative;
+
+    }
+    header>img{
+        text-align:left;
+        position: absolute;
+    }
+   .account{
+    display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex: 1;
+   }
+ 
+  .our-text {
+    max-width: 100%;
+  }
+
+  .product{
+    margin: 0 auto;
+    margin-bottom: 1.5rem; 
+  }
+  
+  .info-row{
+    padding: 2rem 10rem;
+  }
+  .our{
+    padding: 2rem 10rem;
+  }
+.story{
+    padding: 2rem 10rem;
 }
+.honey-types{
+    padding: 2rem 10rem;
+}
+}
+
+
+
