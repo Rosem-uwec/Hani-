@@ -7,13 +7,9 @@ body{
 
 header{
     background-color: #FFF2CF;  
-    
+    position: relative;
 }
 
-.account{
-max-width: 3rem;
-
-}
 
 header>img{
     width: 10rem;
@@ -88,7 +84,7 @@ nav>a{
     text-decoration: none;
     padding: 1rem 1rem;
     display: inline-block;
-    padding-top: 0%;
+    padding-top: 0;
     
 }
 .favorites {
@@ -108,7 +104,7 @@ color: #fff;
 .favorites img{
     border-radius: 10px;
 }
-section.learn{
+.learn{
     background-color: #FFF2CF;
     padding: 1rem;
 }
@@ -117,6 +113,10 @@ section.learn{
     display: flex;
   gap: 16px;
   align-items: center;
+    max-width: 3rem;
+    position: absolute;
+    top: 1rem;
+    right: 6rem;
 }
 
 
@@ -219,12 +219,12 @@ form{
     max-width: 600px;
     margin: 0 auto;
 }
-label, input[type=text], [type=email], textarea{
+label, input[type="text"], input[type="email"], textarea{
     display: block;
     margin: 1rem 0;
     width: 100%;
 }
-input[type=text], [type=email], textarea{
+input[type="text"], input[type="email"], textarea{
     width: 95%;
     padding: .5rem;
     font-size: 1rem;
@@ -232,22 +232,22 @@ input[type=text], [type=email], textarea{
 }
 textarea{
     height: 7rem;
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family:  Arial;
     color: #0b132b;
 }
-input:focus[type=text], input:focus[type=email], textarea:focus{
+input:focus[type="text"], input:focus[type="email"], textarea:focus{
     outline: none;
     border: 1px solid #00e3c8;
     width: 100%;
 }
 
-.wrapper {
+.wrapper{
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
   }
 
-  .main-content {
+  .main-content{
     flex: 1;
     background-color: #fff1cc; 
     padding: 40px;
@@ -257,7 +257,7 @@ input:focus[type=text], input:focus[type=email], textarea:focus{
     text-align: center;
 
   }
-  .bee {
+  .bee{
     margin: 0;
     padding: 0;
   }
@@ -336,6 +336,19 @@ input:focus[type=text], input:focus[type=email], textarea:focus{
   .orange-background {
     background-color: #FCB32B;
   }
+
+  .add-to-cart{
+    padding: .5rem 1rem;
+    border-radius: 6rem;
+    color: white;
+    text-decoration:underline;
+    display: inline-block;
+    cursor:pointer;
+    font-family: arial;
+    border: none;
+    font-size: medium;
+  }
+
 @media (min-width: 1000px){
 
     .favorites{
@@ -347,10 +360,7 @@ input:focus[type=text], input:focus[type=email], textarea:focus{
     
        
     }
-    section.learn{
-
-        padding: 1rem 7rem 2rem;
-    }
+    
     
     .headline h1{
         font-size: 50px;
@@ -369,13 +379,12 @@ input:focus[type=text], input:focus[type=email], textarea:focus{
     margin-left: 7rem;
     }
 
-    section.learn{
+    .learn{
         
         padding: 4rem;
         text-align: center;
     }
     nav{
-        display: flex;
         gap: 20px;   
     } 
 
@@ -401,6 +410,7 @@ input:focus[type=text], input:focus[type=email], textarea:focus{
   gap: 20px;
   justify-content: center;
   flex: 1;
+  position: static;
    }
  
   .our-text {
@@ -411,10 +421,7 @@ input:focus[type=text], input:focus[type=email], textarea:focus{
     margin: 0 auto;
     margin-bottom: 1.5rem; 
   }
-  
-  .info-row{
-    padding: 2rem 10rem;
-  }
+
   .our{
     padding: 2rem 10rem;
   }
